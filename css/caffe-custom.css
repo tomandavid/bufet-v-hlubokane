@@ -310,6 +310,7 @@ h1, h2, h3, h4, h5 {
     border-radius: 16px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     transition: all 0.3s ease;
+    margin-bottom: 30px;
 }
 
 .feature-card:hover {
@@ -1075,10 +1076,6 @@ footer .social-icons li a i:hover {
     .gallery-item img,
     .gallery-item-wide img {
         height: 200px;
-    }
-    
-    .feature-card {
-        margin-bottom: 30px;
     }
     
     .contact-card {
