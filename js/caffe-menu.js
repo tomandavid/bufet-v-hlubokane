@@ -14,7 +14,7 @@
     // Configuration
     const CONFIG = {
         // CMS API endpoint for menu data
-        menuEndpoint: 'cms/api.php?restaurant=caffe',
+        menuEndpoint: 'sprava/api.php?restaurant=caffe',
         
         // Fallback to demo data if CMS is unavailable
         useFallbackData: true,

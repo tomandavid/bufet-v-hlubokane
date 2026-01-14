@@ -1,7 +1,0 @@
-{
-    "admin": {
-        "name": "Administrátor",
-        "password": "$2y$12$cWr7iRc0YWEic.z2IBV.fO5wI5N41oA6Pzo02y9dchrA6XgWYrD4y",
-        "role": "admin"
-    }
-}

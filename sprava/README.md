@@ -17,7 +17,7 @@ A lightweight, self-hosted PHP-based CMS for managing daily menus of **Bufet v H
 
 - PHP 7.4 or higher
 - Apache with mod_rewrite (for .htaccess protection) or nginx
-- Write permissions for the `cms/data/` directory
+- Write permissions for the `sprava/data/` directory
 
 ## Installation
 
@@ -34,7 +34,7 @@ your-website/
 ├── js/
 ├── template/
 ├── original/
-└── cms/                    # CMS directory
+└── sprava/                    # CMS directory
     ├── index.php           # CMS entry point
     ├── login.php           # Login page
     ├── logout.php          # Logout handler
@@ -59,17 +59,17 @@ your-website/
 
 ### 2. Set Directory Permissions
 
-The `cms/data/` directory needs write permissions:
+The `sprava/data/` directory needs write permissions:
 
 ```bash
-chmod 755 cms/data/
+chmod 755 sprava/data/
 ```
 
 Or via your FTP client, set the `data` folder permissions to 755.
 
 ### 3. Configure (Optional)
 
-Edit `cms/includes/config.php` if needed:
+Edit `sprava/includes/config.php` if needed:
 
 ```php
 // Set your site URL if auto-detection doesn't work
@@ -81,7 +81,7 @@ define('SESSION_LIFETIME', 3600 * 8);
 
 ### 4. First Login
 
-1. Navigate to `https://your-domain.com/cms/login.php` or click the "Přihlásit se" button on either website
+1. Navigate to `https://your-domain.com/sprava/login.php` or click the "Přihlásit se" button on either website
 2. Use the default credentials:
    - **Username:** `admin`
    - **Password:** `admin123`
@@ -122,14 +122,14 @@ The CMS provides a public JSON API for the frontend websites:
 ### Get Current Week Menu
 
 ```
-GET /cms/api.php?restaurant=bufet
-GET /cms/api.php?restaurant=caffe
+GET /sprava/api.php?restaurant=bufet
+GET /sprava/api.php?restaurant=caffe
 ```
 
 ### Get Specific Week Menu
 
 ```
-GET /cms/api.php?restaurant=bufet&week=2024-01-15
+GET /sprava/api.php?restaurant=bufet&week=2024-01-15
 ```
 
 ### Response Format
@@ -172,7 +172,7 @@ Day indices: 0 = Monday, 1 = Tuesday, ..., 4 = Friday
 ### Changing Admin Password
 
 1. Login to the CMS
-2. The password is stored hashed in `cms/data/users.json`
+2. The password is stored hashed in `sprava/data/users.json`
 3. To manually change it, edit the file and replace the password hash:
 
 ```php
@@ -184,7 +184,7 @@ echo password_hash('your-new-password', PASSWORD_DEFAULT);
 
 ### Adding New Users
 
-Edit `cms/data/users.json`:
+Edit `sprava/data/users.json`:
 
 ```json
 {
@@ -213,7 +213,7 @@ Edit `cms/data/users.json`:
 
 ### "Permission denied" errors
 
-Ensure the `cms/data/` directory has write permissions (755 or 775).
+Ensure the `sprava/data/` directory has write permissions (755 or 775).
 
 ### Menu not updating on website
 
@@ -230,7 +230,7 @@ Ensure the `cms/data/` directory has write permissions (755 or 775).
 ### Blank page or PHP errors
 
 1. Check PHP error logs
-2. Enable error display temporarily in `cms/includes/config.php`:
+2. Enable error display temporarily in `sprava/includes/config.php`:
    ```php
    ini_set('display_errors', 1);
    ```
@@ -239,17 +239,17 @@ Ensure the `cms/data/` directory has write permissions (755 or 775).
 
 | File | Description |
 |------|-------------|
-| `cms/login.php` | Login form and authentication |
-| `cms/dashboard.php` | Main admin interface with week calendar |
-| `cms/api.php` | Public API for fetching menus |
-| `cms/save-menu.php` | Handles menu save/publish |
-| `cms/copy-menu.php` | Handles menu copying |
-| `cms/includes/config.php` | Configuration constants |
-| `cms/includes/auth.php` | Authentication functions |
-| `cms/includes/menu.php` | Menu data functions |
-| `cms/includes/functions.php` | Helper utilities |
-| `cms/data/users.json` | User credentials (auto-created) |
-| `cms/data/menus.json` | Menu data (auto-created) |
+| `sprava/login.php` | Login form and authentication |
+| `sprava/dashboard.php` | Main admin interface with week calendar |
+| `sprava/api.php` | Public API for fetching menus |
+| `sprava/save-menu.php` | Handles menu save/publish |
+| `sprava/copy-menu.php` | Handles menu copying |
+| `sprava/includes/config.php` | Configuration constants |
+| `sprava/includes/auth.php` | Authentication functions |
+| `sprava/includes/menu.php` | Menu data functions |
+| `sprava/includes/functions.php` | Helper utilities |
+| `sprava/data/users.json` | User credentials (auto-created) |
+| `sprava/data/menus.json` | Menu data (auto-created) |
 
 ## License
 

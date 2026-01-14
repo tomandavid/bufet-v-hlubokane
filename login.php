@@ -3,6 +3,6 @@
  * Login redirect from root /login
  * Redirects to CMS login page
  */
-header('Location: cms/login.php');
+header('Location: sprava/login.php');
 exit;
 

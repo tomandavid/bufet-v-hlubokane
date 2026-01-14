@@ -8,7 +8,7 @@
 defined('CMS_LOADED') or die('Direct access not allowed');
 
 // Site configuration
-define('SITE_NAME', 'Menu CMS');
+define('SITE_NAME', 'Menu');
 define('SITE_URL', ''); // Will be auto-detected if empty
 
 // Security
@@ -77,8 +77,8 @@ function getBaseUrl() {
     $host = $_SERVER['HTTP_HOST'] ?? 'localhost';
     $path = dirname($_SERVER['SCRIPT_NAME']);
     
-    // Get path up to /cms/
-    $path = preg_replace('#/cms.*$#', '/cms', $path);
+    // Get path up to /sprava/
+    $path = preg_replace('#/sprava.*$#', '/sprava', $path);
     
     return $protocol . '://' . $host . $path;
 }

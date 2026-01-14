@@ -25,7 +25,7 @@ help:
 	@echo "  http://localhost:$(PORT)           - Bufet v Hlubokáně (dev server)"
 	@echo "  http://localhost                   - Bufet v Hlubokáně (Docker)"
 	@echo "  http://localhost/caffe-upaji.html  - Nejen Caffé u Páji"
-	@echo "  http://localhost/cms/              - CMS Login"
+	@echo "  http://localhost/sprava/              - CMS Login"
 
 # Start local PHP development server
 run:
@@ -36,7 +36,7 @@ run:
 	@echo "Website URLs:"
 	@echo "  Bufet v Hlubokáně:    http://localhost:$(PORT)"
 	@echo "  Nejen Caffé u Páji:   http://localhost:$(PORT)/caffe-upaji.html"
-	@echo "  CMS Admin:            http://localhost:$(PORT)/cms/"
+	@echo "  CMS Admin:            http://localhost:$(PORT)/sprava/"
 	@echo ""
 	@echo "Press Ctrl+C to stop the server"
 	@echo "============================================"
@@ -62,7 +62,7 @@ docker:
 	@echo "Website URLs:"
 	@echo "  Bufet v Hlubokáně:    http://localhost"
 	@echo "  Nejen Caffé u Páji:   http://localhost/caffe-upaji.html"
-	@echo "  CMS Admin:            http://localhost/cms/"
+	@echo "  CMS Admin:            http://localhost/sprava/"
 	@echo ""
 	@echo "Use 'make docker-stop' to stop the server"
 	@echo "============================================"

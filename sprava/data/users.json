@@ -1,0 +1,7 @@
+{
+    "paja": {
+        "name": "Administrátor",
+        "password": "$2y$12$XZJakmgAmryJ8ZNAP86aZO2GynvdLYSXugqyQV3dfiWAkhB8PEsVW",
+        "role": "admin"
+    }
+}
