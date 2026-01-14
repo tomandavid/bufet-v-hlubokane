@@ -63,15 +63,40 @@ body {
 .header {
     background-color: var(--white);
     box-shadow: 0 2px 10px rgba(106, 41, 6, 0.1);
-    padding: 0;
 }
 
-.header .navbar-brand {
-    padding: 15px;
+.header .container {
+    text-align: center;
+}
+
+.navbar-brand.scroll-top {
+    display: block;
+    float: none;
+    text-align: center;
+    margin: 0 auto;
+    padding: 15px 0;
+    border-bottom: none;
+}
+
+.header .navbar {
+    float: none;
+    display: block;
+}
+
+.header #main-nav {
+    float: none;
+    text-align: center;
+}
+
+.header .nav.navbar-nav {
+    display: inline-flex;
+    float: none;
+    margin: 0 auto;
 }
 
 .logo-img {
-    max-height: 50px;
+    display: inline !important;
+    max-height: 60px;
     width: auto;
     transition: transform 0.3s ease;
 }
@@ -614,13 +639,26 @@ footer a:hover {
 }
 
 @media (max-width: 768px) {
+    /* Mobile Navigation */
+    .header .nav.navbar-nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
     .navbar-nav li a.nav-cafe-link {
         margin-left: 0;
+        margin-top: 10px;
         display: inline-block;
+        background-color: #1D4E4F;
+    }
+    
+    .navbar-nav li a.nav-cafe-link:hover {
+        background-color: #264653;
     }
     
     .logo-img {
-        max-height: 45px;
+        max-height: 50px;
     }
     
     .banner {
