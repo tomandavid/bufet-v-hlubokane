@@ -5,7 +5,6 @@
  * - Day selection UI
  * - Menu data fetching from CMS API
  * - Default to today's date
- * - Weekend/holiday handling
  */
 
 (function() {
@@ -16,68 +15,11 @@
         // CMS API endpoint for menu data
         menuEndpoint: 'sprava/api.php?restaurant=bufet',
         
-        // Fallback to demo data if CMS is unavailable
-        useFallbackData: true,
-        
         // Days of the week (Czech)
         days: ['Pondělí', 'Úterý', 'Středa', 'Čtvrtek', 'Pátek'],
         
         // Animation duration
         animationDuration: 300
-    };
-
-    // Fallback menu data (used when CMS is unavailable)
-    const FALLBACK_MENU = {
-        0: { // Pondělí
-            soup: [
-                { name: 'Hovězí vývar s nudlemi', price: '25 Kč', glutenFree: true }
-            ],
-            main: [
-                { name: 'Svíčková na smetaně, houskové knedlíky', price: '115 Kč', number: '1' },
-                { name: 'Kuřecí řízek smažený, bramborová kaše', price: '105 Kč', number: '2', glutenFree: true },
-                { name: 'Špagety bolognese, sýr', price: '95 Kč', number: '3' }
-            ]
-        },
-        1: { // Úterý
-            soup: [
-                { name: 'Gulášová polévka', price: '25 Kč', glutenFree: true }
-            ],
-            main: [
-                { name: 'Vepřový guláš, houskové knedlíky', price: '105 Kč', number: '1' },
-                { name: 'Smažený sýr, hranolky, tatarská omáčka', price: '110 Kč', number: '2', vegetarian: true },
-                { name: 'Kuřecí steak na žampionech, rýže', price: '115 Kč', number: '3', glutenFree: true }
-            ]
-        },
-        2: { // Středa
-            soup: [
-                { name: 'Česneková polévka s krutony', price: '25 Kč', vegetarian: true }
-            ],
-            main: [
-                { name: 'Pečené kuřecí stehno, dušená rýže', price: '100 Kč', number: '1', glutenFree: true },
-                { name: 'Sekaná pečeně, bramborová kaše', price: '95 Kč', number: '2' },
-                { name: 'Těstoviny s kuřecím masem a smetanou', price: '105 Kč', number: '3' }
-            ]
-        },
-        3: { // Čtvrtek
-            soup: [
-                { name: 'Bramboračka', price: '25 Kč', glutenFree: true, vegetarian: true }
-            ],
-            main: [
-                { name: 'Vepřová krkovice na grilu, hranolky', price: '115 Kč', number: '1', glutenFree: true },
-                { name: 'Rizoto s kuřecím masem a zeleninou', price: '100 Kč', number: '2', glutenFree: true },
-                { name: 'Hovězí roláda, houskové knedlíky', price: '120 Kč', number: '3' }
-            ]
-        },
-        4: { // Pátek
-            soup: [
-                { name: 'Zeleninový krém', price: '25 Kč', glutenFree: true, vegetarian: true }
-            ],
-            main: [
-                { name: 'Smažený vepřový řízek, bramborový salát', price: '110 Kč', number: '1' },
-                { name: 'Pečený losos, bylinkové brambory', price: '135 Kč', number: '2', glutenFree: true },
-                { name: 'Kuřecí nudličky na kari, rýže', price: '105 Kč', number: '3', glutenFree: true }
-            ]
-        }
     };
 
     // State
@@ -140,20 +82,9 @@
                 return data.menu;
             }
             
-            // CMS returned empty menu, use fallback
-            if (CONFIG.useFallbackData) {
-                console.warn('CMS menu empty, using fallback data');
-                return FALLBACK_MENU;
-            }
-            
             return {};
         } catch (error) {
-            console.warn('Failed to fetch from CMS, using fallback:', error.message);
-            
-            if (CONFIG.useFallbackData) {
-                return FALLBACK_MENU;
-            }
-            
+            console.warn('Failed to fetch menu from CMS:', error.message);
             return {};
         }
     }

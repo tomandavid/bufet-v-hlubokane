@@ -5,7 +5,6 @@
  * - Day selection UI
  * - Menu data fetching from CMS API
  * - Default to today's date
- * - Weekend/holiday handling
  */
 
 (function() {
@@ -16,63 +15,11 @@
         // CMS API endpoint for menu data
         menuEndpoint: 'sprava/api.php?restaurant=caffe',
         
-        // Fallback to demo data if CMS is unavailable
-        useFallbackData: true,
-        
         // Days of the week (Czech)
         days: ['Pondělí', 'Úterý', 'Středa', 'Čtvrtek', 'Pátek'],
         
         // Animation duration in ms
         animationDuration: 300
-    };
-
-    // Fallback menu data (café-style menu with desserts)
-    const FALLBACK_MENU = {
-        0: { // Pondělí
-            soup: [],
-            main: [],
-            dessert: [
-                { name: 'Větrník s karamelovou polevou', price: '55 Kč', vegetarian: true },
-                { name: 'Medovník s vlašskými ořechy', price: '65 Kč', vegetarian: true },
-                { name: 'Jablečný štrúdl se skořicí', price: '55 Kč', vegetarian: true }
-            ]
-        },
-        1: { // Úterý
-            soup: [],
-            main: [],
-            dessert: [
-                { name: 'Punčový řez', price: '55 Kč', vegetarian: true },
-                { name: 'Indiánek s čokoládovou polevou', price: '45 Kč', vegetarian: true },
-                { name: 'Makový závin', price: '50 Kč', vegetarian: true }
-            ]
-        },
-        2: { // Středa
-            soup: [],
-            main: [],
-            dessert: [
-                { name: 'Trdelník s vanilkovým krémem', price: '65 Kč', vegetarian: true },
-                { name: 'Laskonky kokosové', price: '45 Kč', vegetarian: true },
-                { name: 'Palačinky s tvarohem', price: '75 Kč', vegetarian: true }
-            ]
-        },
-        3: { // Čtvrtek
-            soup: [],
-            main: [],
-            dessert: [
-                { name: 'Věneček s vanilkovým krémem', price: '50 Kč', vegetarian: true },
-                { name: 'Ovocné knedlíky s jahodami', price: '85 Kč', vegetarian: true },
-                { name: 'Bublanina s třešněmi', price: '55 Kč', vegetarian: true }
-            ]
-        },
-        4: { // Pátek
-            soup: [],
-            main: [],
-            dessert: [
-                { name: 'Pražský dort s čokoládou', price: '75 Kč', vegetarian: true },
-                { name: 'Lívance se švestkovým kompotem', price: '65 Kč', vegetarian: true },
-                { name: 'Marlenka medová', price: '70 Kč', vegetarian: true }
-            ]
-        }
     };
 
     // State
@@ -135,20 +82,9 @@
                 return data.menu;
             }
             
-            // CMS returned empty menu, use fallback
-            if (CONFIG.useFallbackData) {
-                console.warn('CMS menu empty, using fallback data');
-                return FALLBACK_MENU;
-            }
-            
             return {};
         } catch (error) {
-            console.warn('Failed to fetch from CMS, using fallback:', error.message);
-            
-            if (CONFIG.useFallbackData) {
-                return FALLBACK_MENU;
-            }
-            
+            console.warn('Failed to fetch menu from CMS:', error.message);
             return {};
         }
     }
