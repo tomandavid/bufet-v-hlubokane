@@ -115,6 +115,26 @@ body {
     color: var(--brand-primary) !important;
 }
 
+/* Cafe Navigation Link */
+.navbar-nav li a.nav-cafe-link {
+    background-color: var(--brand-secondary);
+    color: var(--white) !important;
+    border-radius: 20px;
+    padding: 8px 18px !important;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav li a.nav-cafe-link:hover {
+    background-color: var(--brand-primary);
+    color: var(--white) !important;
+    transform: translateY(-2px);
+}
+
+.navbar-nav li a.nav-cafe-link i {
+    margin-right: 5px;
+}
+
 /* ============================================
    Banner Section
    ============================================ */
