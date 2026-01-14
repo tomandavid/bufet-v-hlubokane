@@ -871,7 +871,7 @@ footer a:hover {
 }
 
 .footer-admin a {
-    color: rgba(255, 255, 255, 0.3) !important;
+    color: rgba(255, 255, 255, 0.5) !important;
     font-size: 11px;
     text-decoration: none;
     letter-spacing: 0.5px;
@@ -879,7 +879,7 @@ footer a:hover {
 }
 
 .footer-admin a:hover {
-    color: rgba(255, 255, 255, 0.6) !important;
+    color: rgba(255, 255, 255, 0.8) !important;
 }
 
 /* ============================================
