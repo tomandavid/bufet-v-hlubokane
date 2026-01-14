@@ -1,0 +1,11 @@
+services:
+  web:
+    image: php:8.2-apache
+    container_name: bufet-hlubokane
+    ports:
+      - "80:80"
+    volumes:
+      - .:/var/www/html
+    working_dir: /var/www/html
+    restart: unless-stopped
+

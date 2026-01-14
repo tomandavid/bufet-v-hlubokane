@@ -1,0 +1,6 @@
+{"timestamp":"2026-01-14 20:53:56","user":"anonymous","action":"login_failed","details":{"username":"toman.david@hotmail.cz"},"ip":"::1"}
+{"timestamp":"2026-01-14 20:54:01","user":"anonymous","action":"login_failed","details":{"username":"admin"},"ip":"::1"}
+{"timestamp":"2026-01-14 20:54:10","user":"anonymous","action":"login_failed","details":{"username":"admin"},"ip":"::1"}
+{"timestamp":"2026-01-14 20:54:18","user":"admin","action":"login","details":{"username":"admin"},"ip":"::1"}
+{"timestamp":"2026-01-14 20:58:33","user":"admin","action":"menu_saved","details":{"restaurant":"bufet","week":"2026-01-12","action":"save"},"ip":"::1"}
+{"timestamp":"2026-01-14 21:10:15","user":"admin","action":"login","details":{"username":"admin"},"ip":"192.168.65.1"}

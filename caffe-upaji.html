@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Nejen Caffé u Páji | Kavárna Žamberk</title>
+    <meta name="description" content="Nejen Caffé u Páji - útulná kavárna v centru Žamberku. Domácí dezerty, snídaňové menu, polední menu a kvalitní káva.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="img/logo.jpg">
+    <link rel="icon" type="image/png" href="img/logo.jpg">
+
+    <link rel="stylesheet" href="template/css/bootstrap.min.css">
+    <link rel="stylesheet" href="template/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="template/css/fontAwesome.css">
+    <link rel="stylesheet" href="template/css/hero-slider.css">
+    <link rel="stylesheet" href="template/css/owl-carousel.css">
+    <link rel="stylesheet" href="template/css/templatemo-style.css">
+    <link rel="stylesheet" href="css/caffe-custom.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="template/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="container">
+            <nav class="navbar navbar-inverse" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav" aria-label="Toggle navigation">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#" class="navbar-brand scroll-top">Nejen Caffé u Páji</a>
+                </div>
+                <div id="main-nav" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#about" class="scroll-link" data-id="about">O nás</a></li>
+                        <li><a href="#menu" class="scroll-link" data-id="menu">Denní menu</a></li>
+                        <li><a href="#hours" class="scroll-link" data-id="hours">Otevírací doba</a></li>
+                        <li><a href="#contact" class="scroll-link" data-id="contact">Kontakt</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Hero Banner Section -->
+    <section class="hero-banner">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="hero-content">
+                        <span class="hero-tagline">Kavárna v srdci Žamberku</span>
+                        <h1>Nejen Caffé u Páji</h1>
+                        <p>Útulná kavárna nabízející kvalitní kávu, domácí dezerty, snídaňové menu a polední menu. Přijďte si vychutnat příjemnou atmosféru a lahodné pochoutky.</p>
+                        <div class="hero-buttons">
+                            <div class="primary-button">
+                                <a href="#menu" class="scroll-link" data-id="menu">Zobrazit denní menu</a>
+                            </div>
+                            <div class="secondary-button">
+                                <a href="https://www.facebook.com/caffeupaji/" target="_blank" rel="noopener noreferrer">
+                                    <i class="fa fa-facebook"></i> Sledujte nás
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Daily Menu Section -->
+    <section id="menu" class="daily-menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading-center">
+                        <span class="section-label">Co dnes nabízíme</span>
+                        <h2>Denní nabídka</h2>
+                        <p>Každý den pro vás připravujeme domácí dezerty a sladkosti</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Day Selector -->
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="weekday-selector">
+                        <button class="day-btn" data-day="0">Pondělí</button>
+                        <button class="day-btn" data-day="1">Úterý</button>
+                        <button class="day-btn" data-day="2">Středa</button>
+                        <button class="day-btn" data-day="3">Čtvrtek</button>
+                        <button class="day-btn" data-day="4">Pátek</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Menu Legend -->
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="menu-legend">
+                        <div class="legend-item">
+                            <span class="diet-tag diet-gluten">🌾</span>
+                            <span>Bez lepku</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="diet-tag diet-veg">🥬</span>
+                            <span>Vegetariánské</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Menu Content -->
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="menu-content-wrapper">
+                        <div id="menu-loading" class="menu-loading">
+                            <div class="loading-spinner"></div>
+                            <p>Načítání menu...</p>
+                        </div>
+                        <div id="menu-closed" class="menu-closed" style="display: none;">
+                            <div class="closed-icon">
+                                <i class="fa fa-calendar-times-o"></i>
+                            </div>
+                            <h3>O víkendu máme zavřeno</h3>
+                            <p>Polední menu nabízíme v pracovní dny. Přijďte k nám v pondělí až pátek!</p>
+                        </div>
+                        <div id="menu-container" class="menu-container">
+                            <!-- Soup Section (hidden by default, shown if data exists) -->
+                            <div class="menu-section" style="display: none;">
+                                <div class="menu-section-header">
+                                    <i class="fa fa-spoon"></i>
+                                    <h3>Polévka</h3>
+                                </div>
+                                <div id="soup-list" class="menu-items"></div>
+                            </div>
+                            
+                            <!-- Main Dishes Section (hidden by default, shown if data exists) -->
+                            <div class="menu-section" style="display: none;">
+                                <div class="menu-section-header">
+                                    <i class="fa fa-cutlery"></i>
+                                    <h3>Hlavní jídlo</h3>
+                                </div>
+                                <div id="main-dishes-list" class="menu-items"></div>
+                            </div>
+                            
+                            <!-- Desserts Section -->
+                            <div class="menu-section">
+                                <div class="menu-section-header">
+                                    <i class="fa fa-birthday-cake"></i>
+                                    <h3>Domácí dezerty</h3>
+                                </div>
+                                <div id="desserts-list" class="menu-items"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="about-image">
+                        <img src="template/img/book_left_image.jpg" alt="Kavárna interiér">
+                        <div class="about-badge">
+                            <span class="badge-text">Od roku 2015</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="about-content">
+                        <span class="section-label">O naší kavárně</span>
+                        <h2>Místo, kde se cítíte jako doma</h2>
+                        <p>
+                            <strong>Nejen Caffé u Páji</strong> je útulná kavárna poblíž centra Žamberku, 
+                            kde si můžete vychutnat výběrovou kávu, originální domácí dezerty a chutné snídaně. 
+                            Každý den pro vás připravujeme polední menu s čerstvými surovinami.
+                        </p>
+                        <p>
+                            Naše kavárna je ideálním místem pro setkání s přáteli, pracovní schůzky 
+                            nebo chvíle klidu s dobrou knihou. V létě si můžete posedět na příjemné 
+                            venkovní zahrádce.
+                        </p>
+                        <ul class="about-features">
+                            <li><i class="fa fa-coffee"></i> Výběrová káva</li>
+                            <li><i class="fa fa-birthday-cake"></i> Domácí dezerty</li>
+                            <li><i class="fa fa-cutlery"></i> Polední menu</li>
+                            <li><i class="fa fa-sun-o"></i> Snídaňové menu</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fa fa-coffee"></i>
+                        </div>
+                        <h3>Kvalitní káva</h3>
+                        <p>Pražená s láskou, servírovaná s péčí. Nabízíme espresso, cappuccino, latte a další kávové speciality.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fa fa-birthday-cake"></i>
+                        </div>
+                        <h3>Domácí dezerty</h3>
+                        <p>Originální dortíčky a zákusky připravované každý den čerstvě v naší kuchyni z kvalitních surovin.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fa fa-cutlery"></i>
+                        </div>
+                        <h3>Denní menu</h3>
+                        <p>Každý pracovní den nabízíme polední menu s polévkou a hlavním jídlem z čerstvých surovin.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Opening Hours & Reservation Section -->
+    <section id="hours" class="hours-reservation-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="hours-card">
+                        <div class="hours-header">
+                            <i class="fa fa-clock-o"></i>
+                            <h3>Otevírací doba</h3>
+                        </div>
+                        <div class="hours-content">
+                            <div class="hours-item">
+                                <span class="day">Pondělí</span>
+                                <span class="time">7:30 - 20:00</span>
+                            </div>
+                            <div class="hours-item">
+                                <span class="day">Úterý</span>
+                                <span class="time">7:30 - 20:00</span>
+                            </div>
+                            <div class="hours-item">
+                                <span class="day">Středa</span>
+                                <span class="time">7:30 - 20:00</span>
+                            </div>
+                            <div class="hours-item">
+                                <span class="day">Čtvrtek</span>
+                                <span class="time">7:30 - 20:00</span>
+                            </div>
+                            <div class="hours-item">
+                                <span class="day">Pátek</span>
+                                <span class="time">7:30 - 20:00</span>
+                            </div>
+                            <div class="hours-item weekend">
+                                <span class="day">Sobota - Neděle</span>
+                                <span class="time closed">Zavřeno</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="reservation-card">
+                        <div class="reservation-header">
+                            <i class="fa fa-phone"></i>
+                            <h3>Rezervace</h3>
+                        </div>
+                        <div class="reservation-content">
+                            <p>Chcete si zajistit místo? Zavolejte nám nebo nám napište na Facebooku.</p>
+                            <div class="reservation-phone">
+                                <a href="tel:+420776186722">+420 776 186 722</a>
+                            </div>
+                            <div class="reservation-divider">
+                                <span>nebo</span>
+                            </div>
+                            <div class="primary-button">
+                                <a href="https://www.facebook.com/caffeupaji/" target="_blank" rel="noopener noreferrer">
+                                    <i class="fa fa-facebook"></i> Napište nám na Facebooku
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading-center light">
+                        <span class="section-label">Kde nás najdete</span>
+                        <h2>Kontakt</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <h4>Adresa</h4>
+                        <p>Nádražní 764<br>564 01 Žamberk</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <h4>Telefon</h4>
+                        <p><a href="tel:+420776186722">+420 776 186 722</a></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fa fa-envelope"></i>
+                        </div>
+                        <h4>E-mail</h4>
+                        <p><a href="mailto:rolfova.pavla@seznam.cz">rolfova.pavla@seznam.cz</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div id="map">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.8!2d16.4667!3d50.0879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470de35ff2b3e7af%3A0xNadrazni764Zamberk!2sN%C3%A1dra%C5%BEn%C3%AD%20764%2C%20564%2001%20%C5%BDamberk!5e0!3m2!1scs!2scz!4v1592149019322!5m2!1scs!2scz" 
+                width="100%" 
+                height="400" 
+                style="border:0" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Mapa - Nejen Caffé u Páji">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Back to Bufet Banner -->
+    <section class="cross-promo-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="promo-content">
+                        <span class="promo-label">Navštivte také</span>
+                        <h3>Bufet v Hlubokáně</h3>
+                        <p>Čerstvá domácí kuchyně, denní menu a catering v Žamberku</p>
+                        <div class="primary-button">
+                            <a href="index.html">Zobrazit Bufet v Hlubokáně</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <p>&copy; <span id="current-year">2026</span> Nejen Caffé u Páji</p>
+                </div>
+                <div class="col-md-4">
+                    <ul class="social-icons">
+                        <li>
+                            <a href="https://www.facebook.com/caffeupaji/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <p>Nádražní 764, 564 01 Žamberk</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="footer-admin"><a href="cms/login.php">Správa</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="template/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="template/js/vendor/bootstrap.min.js"></script>
+    <script src="template/js/plugins.js"></script>
+    <script src="template/js/main.js"></script>
+    <script src="js/caffe-menu.js"></script>
+
+    <script>
+    $(document).ready(function() {
+        // Set current year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Navigation click actions 
+        $('.scroll-link').on('click', function(event) {
+            event.preventDefault();
+            var sectionID = $(this).attr("data-id");
+            scrollToID('#' + sectionID, 750);
+        });
+        
+        // Scroll to top action
+        $('.scroll-top').on('click', function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 'slow');         
+        });
+        
+        // Mobile nav toggle
+        $('#nav-toggle').on('click', function(event) {
+            event.preventDefault();
+            $('#main-nav').toggleClass("open");
+        });
+        
+        // Initialize menu
+        if (typeof initCaffeMenu === 'function') {
+            initCaffeMenu();
+        }
+    });
+
+    // Scroll function
+    function scrollToID(id, speed) {
+        var offSet = 70; // Account for fixed header
+        var targetOffset = $(id).offset().top - offSet;
+        var mainNav = $('#main-nav');
+        $('html,body').animate({scrollTop: targetOffset}, speed);
+        if (mainNav.hasClass("open")) {
+            mainNav.css("height", "1px").removeClass("in").addClass("collapse");
+            mainNav.removeClass("open");
+        }
+    }
+    </script>
+</body>
+</html>
+

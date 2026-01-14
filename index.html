@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Bufet v Hlubokáně | Denní menu Žamberk</title>
+    <meta name="description" content="Bufet v Hlubokáně - denní menu, catering, rozvoz jídel v Žamberku a okolí. Čerstvá domácí kuchyně každý den.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="img/logo.jpg">
+    <link rel="icon" type="image/png" href="img/logo.jpg">
+
+    <link rel="stylesheet" href="template/css/bootstrap.min.css">
+    <link rel="stylesheet" href="template/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="template/css/fontAwesome.css">
+    <link rel="stylesheet" href="template/css/hero-slider.css">
+    <link rel="stylesheet" href="template/css/owl-carousel.css">
+    <link rel="stylesheet" href="template/css/templatemo-style.css">
+    <link rel="stylesheet" href="css/bufet-custom.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Spectral:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <script src="template/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="container">
+            <a href="#" class="navbar-brand scroll-top">
+                <img src="img/logo.jpg" alt="Bufet v Hlubokáně" class="logo-img">
+            </a>
+            <nav class="navbar navbar-inverse" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav" aria-label="Toggle navigation">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div id="main-nav" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#menu" class="scroll-link" data-id="menu">Denní menu</a></li>
+                        <li><a href="#hours" class="scroll-link" data-id="hours">Otevírací doba</a></li>
+                        <li><a href="#catering" class="scroll-link" data-id="catering">Catering</a></li>
+                        <li><a href="#contact" class="scroll-link" data-id="contact">Kontakt</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Banner Section -->
+    <section class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <h2>Bufet v Hlubokáně</h2>
+                    <p>Čerstvá domácí kuchyně každý den. Denní menu, catering a rozvoz jídel v Žamberku a okolí.</p>
+                    <div class="primary-button">
+                        <a href="#menu" class="scroll-link" data-id="menu">Zobrazit denní menu</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Daily Menu Section -->
+    <section id="menu" class="daily-menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="heading">
+                        <h2>Denní menu</h2>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Day Selector -->
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="weekday-selector">
+                        <button class="day-btn" data-day="0">Pondělí</button>
+                        <button class="day-btn" data-day="1">Úterý</button>
+                        <button class="day-btn" data-day="2">Středa</button>
+                        <button class="day-btn" data-day="3">Čtvrtek</button>
+                        <button class="day-btn" data-day="4">Pátek</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Menu Content -->
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="menu-content-wrapper">
+                        <div id="menu-loading" class="menu-loading">
+                            <p>Načítání menu...</p>
+                        </div>
+                        <div id="menu-closed" class="menu-closed" style="display: none;">
+                            <h3>Dnes je zavřeno</h3>
+                            <p>O víkendech a svátcích máme zavřeno. Denní menu nabízíme v pracovní dny.</p>
+                        </div>
+                        <div id="menu-container" class="menu-container">
+                            <!-- Soup Section -->
+                            <div class="menu-section">
+                                <h3>Polévka</h3>
+                                <div id="soup-list" class="menu-items"></div>
+                            </div>
+                            
+                            <!-- Main Dishes Section -->
+                            <div class="menu-section">
+                                <h3>Hlavní jídla</h3>
+                                <div id="main-dishes-list" class="menu-items"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Menu Legend -->
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="menu-legend">
+                        <div class="legend-item">
+                            <span class="diet-tag diet-gluten">🌾</span>
+                            <span>Bez lepku</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="diet-tag diet-veg">🥬</span>
+                            <span>Vegetariánské</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Objednávky Section -->
+    <section class="cook-delecious">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-md-offset-1">
+                    <div class="first-image">
+                        <img src="template/img/cook_01.jpg" alt="Kuchyně">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="cook-content">
+                        <h4>Objednávky</h4>
+                        <div class="contact-content">
+                            <span>Zavolejte nám:</span>
+                            <h6><a href="tel:+420465614281" class="phone-link">+420 465 614 281</a></h6>
+                        </div>
+                        <span>nebo</span>
+                        <div class="primary-white-button">
+                            <a href="#contact" class="scroll-link" data-id="contact">Napište nám</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="second-image">
+                        <img src="template/img/cook_02.jpg" alt="Jídlo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Opening Hours Section -->
+    <section id="hours" class="opening-hours">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="heading">
+                        <h2>Otevírací doba</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="hours-content">
+                        <div class="hours-item">
+                            <span class="day">Pondělí - Pátek</span>
+                            <span class="time">10:00 - 14:00</span>
+                        </div>
+                        <div class="hours-item">
+                            <span class="day">Sobota - Neděle</span>
+                            <span class="time">Zavřeno</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cross-Promo Banner: Nejen Caffé u Páji -->
+    <section class="caffe-promo-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="promo-inner">
+                        <div class="promo-icon">
+                            <i class="fa fa-coffee"></i>
+                        </div>
+                        <div class="promo-text">
+                            <span class="promo-label">Navštivte také</span>
+                            <h3>Nejen Caffé u Páji</h3>
+                            <p>Útulná kavárna v centru Žamberku – kvalitní káva, domácí dezerty, snídaně a polední menu</p>
+                        </div>
+                        <div class="promo-action">
+                            <a href="caffe-upaji.html" class="promo-btn">Navštívit kavárnu</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catering Section -->
+    <section id="catering" class="catering-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="heading">
+                        <h2>Catering</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="catering-content">
+                        <p>
+                            Nabízíme kompletní cateringové služby pro vaše firemní akce, rodinné oslavy, 
+                            svatby a další společenské události. Připravíme pro vás chutné občerstvení 
+                            podle vašich představ a rozpočtu.
+                        </p>
+                        <p>
+                            Zajistíme vše od přípravy jídla až po kompletní servis. Neváhejte nás kontaktovat 
+                            pro nezávaznou nabídku.
+                        </p>
+                        <div class="primary-button">
+                            <a href="#contact" class="scroll-link" data-id="contact">Poptat catering</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="section-heading">
+                        <h2>Napište nám</h2>
+                    </div>
+                    <form id="contact-form" action="https://formsubmit.co/bufet@email.cz" method="POST">
+                        <!-- FormSubmit configuration -->
+                        <input type="hidden" name="_subject" value="Nová zpráva z webu Bufet v Hlubokáně">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="text" name="_honey" style="display:none">
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <fieldset>
+                                    <input name="name" type="text" class="form-control" id="name" placeholder="Vaše jméno..." required>
+                                </fieldset>
+                                <fieldset>
+                                    <input name="email" type="email" class="form-control" id="email" placeholder="Váš e-mail..." required>
+                                </fieldset>
+                                <fieldset>
+                                    <input name="phone" type="tel" class="form-control" id="phone" placeholder="Váš telefon...">
+                                </fieldset>
+                            </div>
+                            <div class="col-md-6">
+                                <fieldset>
+                                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Vaše zpráva..." required></textarea>
+                                </fieldset>
+                                <fieldset>
+                                    <button type="submit" id="form-submit" class="btn">Odeslat zprávu</button>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <div class="section-heading contact-info">
+                        <h2>Kontaktní údaje</h2>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <img src="img/home.svg" alt="Adresa" class="contact-icon">
+                                <div class="contact-text">
+                                    <strong>Adresa</strong>
+                                    <p>Hluboká 143<br>564 01 Žamberk</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <img src="img/phone.svg" alt="Telefon" class="contact-icon">
+                                <div class="contact-text">
+                                    <strong>Telefon</strong>
+                                    <p><a href="tel:+420465614281">+420 465 614 281</a></p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <img src="img/mail.svg" alt="E-mail" class="contact-icon">
+                                <div class="contact-text">
+                                    <strong>E-mail</strong>
+                                    <p><a href="mailto:bufet@email.cz">bufet@email.cz</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="map">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.9119979316906!2d16.46192091572775!3d50.08793447942703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470de35ff2b3e7af%3A0xd5ea5beb6f9aa1be!2sHlubok%C3%A1%20143%2C%20564%2001%20%C5%BDamberk!5e0!3m2!1scs!2scz!4v1592149019322!5m2!1scs!2scz" 
+                            width="100%" 
+                            height="450" 
+                            style="border:0" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Mapa - Bufet v Hlubokáně">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <p>&copy; <span id="current-year">2026</span> Bufet v Hlubokáně</p>
+                </div>
+                <div class="col-md-4">
+                    <ul class="social-icons">
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <p>Hluboká 143, 564 01 Žamberk</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="footer-admin"><a href="cms/login.php">Správa</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="template/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="template/js/vendor/bootstrap.min.js"></script>
+    <script src="template/js/plugins.js"></script>
+    <script src="template/js/main.js"></script>
+    <script src="js/menu.js"></script>
+
+    <script>
+    $(document).ready(function() {
+        // Set current year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Navigation click actions 
+        $('.scroll-link').on('click', function(event) {
+            event.preventDefault();
+            var sectionID = $(this).attr("data-id");
+            scrollToID('#' + sectionID, 750);
+        });
+        
+        // Scroll to top action
+        $('.scroll-top').on('click', function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 'slow');         
+        });
+        
+        // Mobile nav toggle
+        $('#nav-toggle').on('click', function(event) {
+            event.preventDefault();
+            $('#main-nav').toggleClass("open");
+        });
+        
+        // Initialize menu
+        if (typeof initMenu === 'function') {
+            initMenu();
+        }
+    });
+
+    // Scroll function
+    function scrollToID(id, speed) {
+        var offSet = 70; // Account for fixed header
+        var targetOffset = $(id).offset().top - offSet;
+        var mainNav = $('#main-nav');
+        $('html,body').animate({scrollTop: targetOffset}, speed);
+        if (mainNav.hasClass("open")) {
+            mainNav.css("height", "1px").removeClass("in").addClass("collapse");
+            mainNav.removeClass("open");
+        }
+    }
+    </script>
+</body>
+</html>
+

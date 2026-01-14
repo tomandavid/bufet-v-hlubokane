@@ -1,0 +1,1084 @@
+{
+    "bufet": {
+        "2026-01-12": {
+            "weekStart": "2026-01-12",
+            "status": "published",
+            "days": [
+                {
+                    "date": "2026-01-12",
+                    "dayName": "Pondělí",
+                    "closed": false,
+                    "closedNote": "",
+                    "dishes": [
+                        {
+                            "category": "soup",
+                            "name": "Kuřecí vývar s nudlemi",
+                            "price": 35,
+                            "glutenFree": false,
+                            "vegetarian": false
+                        },
+                        {
+                            "category": "soup",
+                            "name": "Hrachová s krutony",
+                            "price": 35,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "main",
+                            "name": "1. Vepřové ražničí na plechu, pečené Grenaille, dresink",
+                            "price": 135,
+                            "glutenFree": false,
+                            "vegetarian": false
+                        },
+                        {
+                            "category": "main",
+                            "name": "2. Tagliatelle s bazalkovým pestem a pečené krůtí prsíčko, sýr GM",
+                            "price": 135,
+                            "glutenFree": false,
+                            "vegetarian": false
+                        },
+                        {
+                            "category": "main",
+                            "name": "3. Smažený sýr, brambory, tatarka",
+                            "price": 135,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        }
+                    ]
+                },
+                {
+                    "date": "2026-01-13",
+                    "dayName": "Úterý",
+                    "closed": false,
+                    "closedNote": "",
+                    "dishes": [
+                        {
+                            "category": "soup",
+                            "name": "Uzená s rýží",
+                            "price": 35,
+                            "glutenFree": false,
+                            "vegetarian": false
+                        },
+                        {
+                            "category": "soup",
+                            "name": "Květáková",
+                            "price": 35,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "main",
+                            "name": "1. Zabíjačkový talíř, brambory, kyselé zelí",
+                            "price": 135,
+                            "glutenFree": false,
+                            "vegetarian": false
+                        },
+                        {
+                            "category": "main",
+                            "name": "2. Vepřový steak z kotlety s hořčicovou omáčkou, pečené brambory",
+                            "price": 135,
+                            "glutenFree": false,
+                            "vegetarian": false
+                        },
+                        {
+                            "category": "main",
+                            "name": "3. Teplý čočkový salát s pečeným lososem, pečivo",
+                            "price": 135,
+                            "glutenFree": false,
+                            "vegetarian": false
+                        }
+                    ]
+                },
+                {
+                    "date": "2026-01-14",
+                    "dayName": "Středa",
+                    "closed": false,
+                    "closedNote": "",
+                    "dishes": [
+                        {
+                            "category": "soup",
+                            "name": "Kulajda",
+                            "price": 35,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "soup",
+                            "name": "Hovězí vývar s kapáním",
+                            "price": 35,
+                            "glutenFree": false,
+                            "vegetarian": false
+                        },
+                        {
+                            "category": "main",
+                            "name": "1. Smažený kuřecí gordon bleu, bramborová kaše, salátek",
+                            "price": 135,
+                            "glutenFree": false,
+                            "vegetarian": false
+                        },
+                        {
+                            "category": "main",
+                            "name": "2. Rozstřelený španělský ptáček, rýže",
+                            "price": 135,
+                            "glutenFree": false,
+                            "vegetarian": false
+                        },
+                        {
+                            "category": "main",
+                            "name": "3. Tortilla s quacamole a sýrem Halloumi, listový salát se sušenými rajčaty, ořechy a hořčicovým dresinkem",
+                            "price": 135,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        }
+                    ]
+                },
+                {
+                    "date": "2026-01-15",
+                    "dayName": "Čtvrtek",
+                    "closed": false,
+                    "closedNote": "",
+                    "dishes": [
+                        {
+                            "category": "soup",
+                            "name": "Batátovo mrkvový krém se smaženým hráškem",
+                            "price": 35,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "soup",
+                            "name": "Dršťková",
+                            "price": 45,
+                            "glutenFree": false,
+                            "vegetarian": false
+                        },
+                        {
+                            "category": "main",
+                            "name": "1. Burger s trhaným vepřovým masem, coleslaw, hranolky",
+                            "price": 135,
+                            "glutenFree": false,
+                            "vegetarian": false
+                        },
+                        {
+                            "category": "main",
+                            "name": "2. Hovězí vídeňská roštěná, rýže",
+                            "price": 135,
+                            "glutenFree": false,
+                            "vegetarian": false
+                        },
+                        {
+                            "category": "main",
+                            "name": "3. Kuřecí stehenní steak, bylinkový bulgur, grilovaná zelenina",
+                            "price": 135,
+                            "glutenFree": false,
+                            "vegetarian": false
+                        }
+                    ]
+                },
+                {
+                    "date": "2026-01-16",
+                    "dayName": "Pátek",
+                    "closed": false,
+                    "closedNote": "",
+                    "dishes": [
+                        {
+                            "category": "soup",
+                            "name": "Boršč",
+                            "price": 45,
+                            "glutenFree": false,
+                            "vegetarian": false
+                        },
+                        {
+                            "category": "soup",
+                            "name": "Česnečka s vajíčkem, sýrem a krutony",
+                            "price": 35,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "main",
+                            "name": "1. Smažený kuřecí řízek, bramborový salát/brambory, salátek",
+                            "price": 135,
+                            "glutenFree": false,
+                            "vegetarian": false
+                        },
+                        {
+                            "category": "main",
+                            "name": "2. Pečené králičí stehno, bramborové knedlíky, špenát",
+                            "price": 135,
+                            "glutenFree": false,
+                            "vegetarian": false
+                        },
+                        {
+                            "category": "main",
+                            "name": "3. Lívance s marmeládou a šlehaným tvarohem",
+                            "price": 135,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "main",
+                            "name": "4. Přírodní kuřecí steak, brambory, zeleninový salát",
+                            "price": 135,
+                            "glutenFree": false,
+                            "vegetarian": false
+                        }
+                    ]
+                },
+                {
+                    "date": "2026-01-17",
+                    "dayName": "Sobota",
+                    "closed": true,
+                    "closedNote": "Zavřeno",
+                    "dishes": []
+                },
+                {
+                    "date": "2026-01-18",
+                    "dayName": "Neděle",
+                    "closed": true,
+                    "closedNote": "Zavřeno",
+                    "dishes": []
+                }
+            ],
+            "lastModified": "2026-01-14 21:30:00",
+            "modifiedBy": "admin"
+        },
+        "2026-01-19": {
+            "weekStart": "2026-01-19",
+            "status": "published",
+            "days": [
+                {
+                    "date": "2026-01-19",
+                    "dayName": "Pondělí",
+                    "closed": false,
+                    "closedNote": "",
+                    "dishes": [
+                        {
+                            "category": "soup",
+                            "name": "Kuřecí vývar s nudlemi",
+                            "price": 35,
+                            "glutenFree": false,
+                            "vegetarian": false
+                        },
+                        {
+                            "category": "soup",
+                            "name": "Hrachová s krutony",
+                            "price": 35,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "main",
+                            "name": "1. Vepřové ražničí na plechu, pečené Grenaille, dresink",
+                            "price": 135,
+                            "glutenFree": false,
+                            "vegetarian": false
+                        },
+                        {
+                            "category": "main",
+                            "name": "2. Tagliatelle s bazalkovým pestem a pečené krůtí prsíčko, sýr GM",
+                            "price": 135,
+                            "glutenFree": false,
+                            "vegetarian": false
+                        },
+                        {
+                            "category": "main",
+                            "name": "3. Smažený sýr, brambory, tatarka",
+                            "price": 135,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        }
+                    ]
+                },
+                {
+                    "date": "2026-01-20",
+                    "dayName": "Úterý",
+                    "closed": false,
+                    "closedNote": "",
+                    "dishes": [
+                        {
+                            "category": "soup",
+                            "name": "Uzená s rýží",
+                            "price": 35,
+                            "glutenFree": false,
+                            "vegetarian": false
+                        },
+                        {
+                            "category": "soup",
+                            "name": "Květáková",
+                            "price": 35,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "main",
+                            "name": "1. Zabíjačkový talíř, brambory, kyselé zelí",
+                            "price": 135,
+                            "glutenFree": false,
+                            "vegetarian": false
+                        },
+                        {
+                            "category": "main",
+                            "name": "2. Vepřový steak z kotlety s hořčicovou omáčkou, pečené brambory",
+                            "price": 135,
+                            "glutenFree": false,
+                            "vegetarian": false
+                        },
+                        {
+                            "category": "main",
+                            "name": "3. Teplý čočkový salát s pečeným lososem, pečivo",
+                            "price": 135,
+                            "glutenFree": false,
+                            "vegetarian": false
+                        }
+                    ]
+                },
+                {
+                    "date": "2026-01-21",
+                    "dayName": "Středa",
+                    "closed": false,
+                    "closedNote": "",
+                    "dishes": [
+                        {
+                            "category": "soup",
+                            "name": "Kulajda",
+                            "price": 35,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "soup",
+                            "name": "Hovězí vývar s kapáním",
+                            "price": 35,
+                            "glutenFree": false,
+                            "vegetarian": false
+                        },
+                        {
+                            "category": "main",
+                            "name": "1. Smažený kuřecí gordon bleu, bramborová kaše, salátek",
+                            "price": 135,
+                            "glutenFree": false,
+                            "vegetarian": false
+                        },
+                        {
+                            "category": "main",
+                            "name": "2. Rozstřelený španělský ptáček, rýže",
+                            "price": 135,
+                            "glutenFree": false,
+                            "vegetarian": false
+                        },
+                        {
+                            "category": "main",
+                            "name": "3. Tortilla s quacamole a sýrem Halloumi, listový salát se sušenými rajčaty, ořechy a hořčicovým dresinkem",
+                            "price": 135,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        }
+                    ]
+                },
+                {
+                    "date": "2026-01-22",
+                    "dayName": "Čtvrtek",
+                    "closed": false,
+                    "closedNote": "",
+                    "dishes": [
+                        {
+                            "category": "soup",
+                            "name": "Batátovo mrkvový krém se smaženým hráškem",
+                            "price": 35,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "soup",
+                            "name": "Dršťková",
+                            "price": 45,
+                            "glutenFree": false,
+                            "vegetarian": false
+                        },
+                        {
+                            "category": "main",
+                            "name": "1. Burger s trhaným vepřovým masem, coleslaw, hranolky",
+                            "price": 135,
+                            "glutenFree": false,
+                            "vegetarian": false
+                        },
+                        {
+                            "category": "main",
+                            "name": "2. Hovězí vídeňská roštěná, rýže",
+                            "price": 135,
+                            "glutenFree": false,
+                            "vegetarian": false
+                        },
+                        {
+                            "category": "main",
+                            "name": "3. Kuřecí stehenní steak, bylinkový bulgur, grilovaná zelenina",
+                            "price": 135,
+                            "glutenFree": false,
+                            "vegetarian": false
+                        }
+                    ]
+                },
+                {
+                    "date": "2026-01-23",
+                    "dayName": "Pátek",
+                    "closed": false,
+                    "closedNote": "",
+                    "dishes": [
+                        {
+                            "category": "soup",
+                            "name": "Boršč",
+                            "price": 45,
+                            "glutenFree": false,
+                            "vegetarian": false
+                        },
+                        {
+                            "category": "soup",
+                            "name": "Česnečka s vajíčkem, sýrem a krutony",
+                            "price": 35,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "main",
+                            "name": "1. Smažený kuřecí řízek, bramborový salát/brambory, salátek",
+                            "price": 135,
+                            "glutenFree": false,
+                            "vegetarian": false
+                        },
+                        {
+                            "category": "main",
+                            "name": "2. Pečené králičí stehno, bramborové knedlíky, špenát",
+                            "price": 135,
+                            "glutenFree": false,
+                            "vegetarian": false
+                        },
+                        {
+                            "category": "main",
+                            "name": "3. Lívance s marmeládou a šlehaným tvarohem",
+                            "price": 135,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "main",
+                            "name": "4. Přírodní kuřecí steak, brambory, zeleninový salát",
+                            "price": 135,
+                            "glutenFree": false,
+                            "vegetarian": false
+                        }
+                    ]
+                },
+                {
+                    "date": "2026-01-24",
+                    "dayName": "Sobota",
+                    "closed": true,
+                    "closedNote": "Zavřeno",
+                    "dishes": []
+                },
+                {
+                    "date": "2026-01-25",
+                    "dayName": "Neděle",
+                    "closed": true,
+                    "closedNote": "Zavřeno",
+                    "dishes": []
+                }
+            ],
+            "lastModified": "2026-01-14 21:35:00",
+            "modifiedBy": "admin"
+        }
+    },
+    "caffe": {
+        "2026-01-12": {
+            "weekStart": "2026-01-12",
+            "status": "published",
+            "days": [
+                {
+                    "date": "2026-01-12",
+                    "dayName": "Pondělí",
+                    "closed": false,
+                    "closedNote": "",
+                    "dishes": [
+                        {
+                            "category": "dessert",
+                            "name": "Větrník s karamelovou polevou",
+                            "price": 55,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "dessert",
+                            "name": "Medovník s vlašskými ořechy",
+                            "price": 65,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "dessert",
+                            "name": "Jablečný štrúdl se skořicí a rozinkami",
+                            "price": 55,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "dessert",
+                            "name": "Tvarohový koláč s drobenkou",
+                            "price": 50,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "dessert",
+                            "name": "Kremrole se šlehačkou",
+                            "price": 45,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        }
+                    ]
+                },
+                {
+                    "date": "2026-01-13",
+                    "dayName": "Úterý",
+                    "closed": false,
+                    "closedNote": "",
+                    "dishes": [
+                        {
+                            "category": "dessert",
+                            "name": "Punčový řez",
+                            "price": 55,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "dessert",
+                            "name": "Indiánek s čokoládovou polevou",
+                            "price": 45,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "dessert",
+                            "name": "Makový závin s cukrovou polevou",
+                            "price": 50,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "dessert",
+                            "name": "Buchty s povidly",
+                            "price": 45,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "dessert",
+                            "name": "Rakvička s máslovým krémem",
+                            "price": 40,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        }
+                    ]
+                },
+                {
+                    "date": "2026-01-14",
+                    "dayName": "Středa",
+                    "closed": false,
+                    "closedNote": "",
+                    "dishes": [
+                        {
+                            "category": "dessert",
+                            "name": "Trdelník s vanilkovým krémem",
+                            "price": 65,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "dessert",
+                            "name": "Laskonky kokosové",
+                            "price": 45,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "dessert",
+                            "name": "Ořechový závin",
+                            "price": 50,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "dessert",
+                            "name": "Palačinky s tvarohem a šlehačkou",
+                            "price": 75,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "dessert",
+                            "name": "Pařížský roh s čokoládovým krémem",
+                            "price": 50,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        }
+                    ]
+                },
+                {
+                    "date": "2026-01-15",
+                    "dayName": "Čtvrtek",
+                    "closed": false,
+                    "closedNote": "",
+                    "dishes": [
+                        {
+                            "category": "dessert",
+                            "name": "Věneček s vanilkovým krémem",
+                            "price": 50,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "dessert",
+                            "name": "Ovocné knedlíky s jahodami a tvarohem",
+                            "price": 85,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "dessert",
+                            "name": "Bublanina s třešněmi",
+                            "price": 55,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "dessert",
+                            "name": "Koláče s mákem a tvarohem",
+                            "price": 35,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "dessert",
+                            "name": "Švestkový koláč s drobenkou",
+                            "price": 50,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        }
+                    ]
+                },
+                {
+                    "date": "2026-01-16",
+                    "dayName": "Pátek",
+                    "closed": false,
+                    "closedNote": "",
+                    "dishes": [
+                        {
+                            "category": "dessert",
+                            "name": "Pražský dort s čokoládou",
+                            "price": 75,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "dessert",
+                            "name": "Lívance se švestkovým kompotem",
+                            "price": 65,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "dessert",
+                            "name": "Marlenka medová",
+                            "price": 70,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "dessert",
+                            "name": "Žloutkové věnečky",
+                            "price": 45,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "dessert",
+                            "name": "Tvarohové taštičky s vanilkovou omáčkou",
+                            "price": 60,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        }
+                    ]
+                },
+                {
+                    "date": "2026-01-17",
+                    "dayName": "Sobota",
+                    "closed": false,
+                    "closedNote": "",
+                    "dishes": [
+                        {
+                            "category": "dessert",
+                            "name": "Víkendový speciál: Domácí štrúdl s vanilkovou zmrzlinou",
+                            "price": 85,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "dessert",
+                            "name": "Trdelník s Nutellou a jahodami",
+                            "price": 75,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "dessert",
+                            "name": "Medovník XL porce",
+                            "price": 85,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "dessert",
+                            "name": "Horké maliny s vanilkovým pudinkem",
+                            "price": 70,
+                            "glutenFree": true,
+                            "vegetarian": true
+                        }
+                    ]
+                },
+                {
+                    "date": "2026-01-18",
+                    "dayName": "Neděle",
+                    "closed": false,
+                    "closedNote": "",
+                    "dishes": [
+                        {
+                            "category": "dessert",
+                            "name": "Nedělní speciál: Moravské koláče mix (mák, tvaroh, povidla)",
+                            "price": 55,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "dessert",
+                            "name": "Domácí jablečný závin s vanilkovou šlehačkou",
+                            "price": 65,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "dessert",
+                            "name": "Palačinkový dort s lesním ovocem",
+                            "price": 95,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "dessert",
+                            "name": "Teplé borůvkové knedlíky",
+                            "price": 85,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        }
+                    ]
+                }
+            ],
+            "lastModified": "2026-01-14 21:45:00",
+            "modifiedBy": "admin"
+        },
+        "2026-01-19": {
+            "weekStart": "2026-01-19",
+            "status": "published",
+            "days": [
+                {
+                    "date": "2026-01-19",
+                    "dayName": "Pondělí",
+                    "closed": false,
+                    "closedNote": "",
+                    "dishes": [
+                        {
+                            "category": "dessert",
+                            "name": "Domácí perník s povidly",
+                            "price": 45,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "dessert",
+                            "name": "Čokoládový větrník",
+                            "price": 60,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "dessert",
+                            "name": "Jablkový koláč s karamelovým přelivem",
+                            "price": 55,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "dessert",
+                            "name": "Tvarohové knedlíky s mákem a cukrem",
+                            "price": 75,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "dessert",
+                            "name": "Linecké cukroví s marmeládou",
+                            "price": 40,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        }
+                    ]
+                },
+                {
+                    "date": "2026-01-20",
+                    "dayName": "Úterý",
+                    "closed": false,
+                    "closedNote": "",
+                    "dishes": [
+                        {
+                            "category": "dessert",
+                            "name": "Šišky s malinovou omáčkou",
+                            "price": 55,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "dessert",
+                            "name": "Bábovka mramorová",
+                            "price": 45,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "dessert",
+                            "name": "Piškotová roláda s jahodovým krémem",
+                            "price": 55,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "dessert",
+                            "name": "Vdolky s povidly a tvarohem",
+                            "price": 65,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "dessert",
+                            "name": "Pusinky s čokoládou",
+                            "price": 35,
+                            "glutenFree": true,
+                            "vegetarian": true
+                        }
+                    ]
+                },
+                {
+                    "date": "2026-01-21",
+                    "dayName": "Středa",
+                    "closed": false,
+                    "closedNote": "",
+                    "dishes": [
+                        {
+                            "category": "dessert",
+                            "name": "Olomoucký tvarožník",
+                            "price": 60,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "dessert",
+                            "name": "Hrníčkový koláč s rybízem",
+                            "price": 50,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "dessert",
+                            "name": "Meruňkové knedlíky s máslem",
+                            "price": 85,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "dessert",
+                            "name": "Kotrč s pudinkovým krémem",
+                            "price": 55,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "dessert",
+                            "name": "Černý les (Schwarzwald)",
+                            "price": 75,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        }
+                    ]
+                },
+                {
+                    "date": "2026-01-22",
+                    "dayName": "Čtvrtek",
+                    "closed": false,
+                    "closedNote": "",
+                    "dishes": [
+                        {
+                            "category": "dessert",
+                            "name": "Pardubický perník",
+                            "price": 50,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "dessert",
+                            "name": "Loupák s vanilkovým krémem",
+                            "price": 40,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "dessert",
+                            "name": "Frgály valašské s tvarohem a švestkami",
+                            "price": 55,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "dessert",
+                            "name": "Žemlovka s jablky a rozinkami",
+                            "price": 65,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "dessert",
+                            "name": "Špička s marcipánem",
+                            "price": 55,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        }
+                    ]
+                },
+                {
+                    "date": "2026-01-23",
+                    "dayName": "Pátek",
+                    "closed": false,
+                    "closedNote": "",
+                    "dishes": [
+                        {
+                            "category": "dessert",
+                            "name": "Sachertorte po česku",
+                            "price": 80,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "dessert",
+                            "name": "Koblihy plněné marmeládou",
+                            "price": 35,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "dessert",
+                            "name": "Řezy s mákem a tvarohem",
+                            "price": 50,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "dessert",
+                            "name": "Nudle s mákem a rozehřátým máslem",
+                            "price": 70,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "dessert",
+                            "name": "Kaštanové pyré se šlehačkou",
+                            "price": 65,
+                            "glutenFree": true,
+                            "vegetarian": true
+                        }
+                    ]
+                },
+                {
+                    "date": "2026-01-24",
+                    "dayName": "Sobota",
+                    "closed": false,
+                    "closedNote": "",
+                    "dishes": [
+                        {
+                            "category": "dessert",
+                            "name": "Víkendový speciál: Teplý štrúdl s karamelem a zmrzlinou",
+                            "price": 95,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "dessert",
+                            "name": "Trdelník s jahodami a mascarpone",
+                            "price": 85,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "dessert",
+                            "name": "Karlovarský oplatky s ořechovou náplní",
+                            "price": 45,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "dessert",
+                            "name": "Domácí zmrzlinový pohár s horkou malinovou omáčkou",
+                            "price": 85,
+                            "glutenFree": true,
+                            "vegetarian": true
+                        }
+                    ]
+                },
+                {
+                    "date": "2026-01-25",
+                    "dayName": "Neděle",
+                    "closed": false,
+                    "closedNote": "",
+                    "dishes": [
+                        {
+                            "category": "dessert",
+                            "name": "Nedělní speciál: Palačinky s tvarohem a medem",
+                            "price": 80,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "dessert",
+                            "name": "Svíčková od babičky (buchta)",
+                            "price": 55,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "dessert",
+                            "name": "Plzeňské pařížské tyčinky",
+                            "price": 50,
+                            "glutenFree": false,
+                            "vegetarian": true
+                        },
+                        {
+                            "category": "dessert",
+                            "name": "Horké jablko pečené s mandlemi a vanilkovou zmrzlinou",
+                            "price": 75,
+                            "glutenFree": true,
+                            "vegetarian": true
+                        }
+                    ]
+                }
+            ],
+            "lastModified": "2026-01-14 21:45:00",
+            "modifiedBy": "admin"
+        }
+    }
+}

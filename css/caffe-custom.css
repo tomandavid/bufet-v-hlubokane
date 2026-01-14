@@ -1,0 +1,1208 @@
+/**
+ * Custom Styles for Nejen Caffé u Páji
+ * 
+ * A warm, cozy café aesthetic with:
+ * - Deep teal and warm coral accents
+ * - Elegant serif typography for headings
+ * - Soft, inviting backgrounds
+ * - Coffee-shop inspired color palette
+ */
+
+/* ============================================
+   CSS Custom Properties (Café Brand Colors)
+   ============================================ */
+:root {
+    --caffe-primary: #1D4E4F;       /* Deep teal */
+    --caffe-secondary: #E07A5F;     /* Warm coral */
+    --caffe-accent: #F4A261;        /* Golden amber */
+    --caffe-cream: #FAF3E8;         /* Warm cream */
+    --caffe-dark: #264653;          /* Dark teal */
+    --caffe-light: #FFFBF5;         /* Off-white */
+    --caffe-muted: #8B9A96;         /* Muted sage */
+    --text-primary: #264653;
+    --text-secondary: #5C7A7B;
+    --text-muted: #8B9A96;
+    --bg-light: #FFFBF5;
+    --bg-section: #FAF3E8;
+    --white: #FFFFFF;
+    --border-light: #E8DFD5;
+}
+
+/* ============================================
+   Global Overrides
+   ============================================ */
+body {
+    font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: var(--text-primary);
+    background-color: var(--bg-light);
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+}
+
+.primary-button a,
+.contact-section button {
+    background-color: var(--caffe-secondary);
+    border-radius: 30px;
+    padding: 14px 35px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.primary-button a:hover,
+.contact-section button:hover {
+    background-color: #C86B52;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(224, 122, 95, 0.35);
+}
+
+.secondary-button a {
+    color: var(--white);
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    background-color: transparent;
+    border-radius: 30px;
+    padding: 12px 30px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.secondary-button a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: var(--white);
+    color: var(--white);
+}
+
+/* Section Labels */
+.section-label {
+    display: block;
+    font-family: 'Nunito', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--caffe-secondary);
+    margin-bottom: 15px;
+}
+
+.section-heading-center {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-heading-center h2 {
+    font-size: 42px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0 0 15px;
+}
+
+.section-heading-center p {
+    color: var(--text-muted);
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.section-heading-center.light .section-label {
+    color: var(--caffe-accent);
+}
+
+.section-heading-center.light h2 {
+    color: var(--white);
+}
+
+/* ============================================
+   Header & Navigation
+   ============================================ */
+.header {
+    background-color: var(--white);
+    box-shadow: 0 2px 20px rgba(29, 78, 79, 0.08);
+    padding: 0;
+}
+
+.header .navbar-brand {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--caffe-primary) !important;
+    padding: 20px 15px;
+}
+
+.navbar-nav li a {
+    color: var(--text-primary) !important;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav li a:hover {
+    color: var(--caffe-secondary) !important;
+}
+
+/* ============================================
+   Hero Banner Section
+   ============================================ */
+.hero-banner {
+    position: relative;
+    background-image: url('../template/img/heading-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 180px 0 160px;
+    overflow: hidden;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(29, 78, 79, 0.92) 0%, rgba(38, 70, 83, 0.85) 100%);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.hero-tagline {
+    display: inline-block;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: var(--caffe-accent);
+    margin-bottom: 25px;
+    padding: 10px 25px;
+    border: 1px solid rgba(244, 162, 97, 0.4);
+    border-radius: 30px;
+}
+
+.hero-content h1 {
+    font-size: 64px;
+    font-weight: 700;
+    color: var(--white);
+    margin: 0 0 25px;
+    line-height: 1.1;
+}
+
+.hero-content p {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.8;
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* ============================================
+   About Section
+   ============================================ */
+.about-section {
+    padding: 120px 0;
+    background-color: var(--bg-light);
+}
+
+.about-image {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(29, 78, 79, 0.15);
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.about-badge {
+    position: absolute;
+    bottom: 30px;
+    right: -20px;
+    background: var(--caffe-secondary);
+    padding: 15px 30px;
+    border-radius: 8px 0 0 8px;
+    box-shadow: 0 5px 20px rgba(224, 122, 95, 0.3);
+}
+
+.about-badge .badge-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.about-content {
+    padding-left: 50px;
+}
+
+.about-content h2 {
+    font-size: 38px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0 0 25px;
+    line-height: 1.2;
+}
+
+.about-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+}
+
+.about-features {
+    list-style: none;
+    padding: 0;
+    margin: 35px 0 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.about-features li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.about-features li i {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--caffe-cream);
+    color: var(--caffe-secondary);
+    border-radius: 50%;
+    font-size: 16px;
+}
+
+/* ============================================
+   Features Section
+   ============================================ */
+.features-section {
+    padding: 100px 0;
+    background: linear-gradient(135deg, var(--caffe-primary) 0%, var(--caffe-dark) 100%);
+}
+
+.feature-card {
+    text-align: center;
+    padding: 50px 35px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-8px);
+}
+
+.feature-icon {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--caffe-secondary);
+    border-radius: 50%;
+    margin: 0 auto 25px;
+    box-shadow: 0 10px 30px rgba(224, 122, 95, 0.3);
+}
+
+.feature-icon i {
+    font-size: 32px;
+    color: var(--white);
+}
+
+.feature-card h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--white);
+    margin: 0 0 15px;
+}
+
+.feature-card p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.75);
+    margin: 0;
+}
+
+/* ============================================
+   Daily Menu Section
+   ============================================ */
+.daily-menu {
+    padding: 120px 0;
+    background-color: var(--bg-section);
+}
+
+/* Day Selector */
+.weekday-selector {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 50px;
+}
+
+.day-btn {
+    padding: 14px 28px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: var(--white);
+    color: var(--text-primary);
+    border: 2px solid var(--border-light);
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.day-btn:hover {
+    border-color: var(--caffe-secondary);
+    color: var(--caffe-secondary);
+}
+
+.day-btn.active {
+    background-color: var(--caffe-secondary);
+    border-color: var(--caffe-secondary);
+    color: var(--white);
+    box-shadow: 0 5px 20px rgba(224, 122, 95, 0.3);
+}
+
+/* Today indicator */
+.day-btn.is-today {
+    position: relative;
+}
+
+.day-btn.is-today::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    width: 12px;
+    height: 12px;
+    background: var(--caffe-accent);
+    border-radius: 50%;
+    border: 2px solid var(--bg-section);
+}
+
+.today-badge {
+    position: absolute;
+    top: -12px;
+    right: -10px;
+    background-color: var(--caffe-accent);
+    color: var(--caffe-dark);
+    font-size: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 3px 8px;
+    border-radius: 12px;
+    line-height: 1.2;
+    box-shadow: 0 2px 8px rgba(244, 162, 97, 0.4);
+}
+
+/* Menu Content Wrapper */
+.menu-content-wrapper {
+    background-color: var(--white);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 50px rgba(29, 78, 79, 0.08);
+    min-height: 350px;
+}
+
+.menu-loading {
+    text-align: center;
+    padding: 80px 0;
+    color: var(--text-muted);
+}
+
+.loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 3px solid var(--border-light);
+    border-top-color: var(--caffe-secondary);
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.menu-closed {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.closed-icon {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-section);
+    border-radius: 50%;
+    margin: 0 auto 25px;
+}
+
+.closed-icon i {
+    font-size: 36px;
+    color: var(--text-muted);
+}
+
+.menu-closed h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: var(--text-primary);
+}
+
+.menu-closed p {
+    color: var(--text-muted);
+    font-size: 16px;
+}
+
+/* Menu Sections */
+.menu-section {
+    margin-bottom: 40px;
+}
+
+.menu-section:last-child {
+    margin-bottom: 0;
+}
+
+.menu-section-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--caffe-cream);
+}
+
+.menu-section-header i {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--caffe-secondary);
+    color: var(--white);
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+.menu-section-header h3 {
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--caffe-primary);
+    margin: 0;
+}
+
+/* Menu Items */
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 25px;
+    background-color: var(--bg-light);
+    border-radius: 12px;
+    border-left: 4px solid var(--caffe-secondary);
+    transition: all 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateX(8px);
+    box-shadow: 0 5px 20px rgba(29, 78, 79, 0.08);
+}
+
+.menu-item-info {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    flex: 1;
+}
+
+.menu-item-number {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--caffe-secondary);
+    min-width: 30px;
+}
+
+.menu-item-name {
+    font-size: 16px;
+    color: var(--text-primary);
+    line-height: 1.5;
+}
+
+.menu-item-price {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--caffe-primary);
+    white-space: nowrap;
+    margin-left: 20px;
+}
+
+/* Dietary Tags */
+.menu-item-tags {
+    display: inline-flex;
+    gap: 8px;
+    margin-left: 12px;
+    vertical-align: middle;
+}
+
+.diet-tag {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    font-size: 15px;
+    border-radius: 50%;
+    cursor: help;
+    transition: transform 0.2s ease;
+}
+
+.diet-tag:hover {
+    transform: scale(1.15);
+}
+
+.diet-gluten {
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+    box-shadow: 0 2px 8px rgba(245, 158, 11, 0.25);
+}
+
+.diet-veg {
+    background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+    box-shadow: 0 2px 8px rgba(16, 185, 129, 0.25);
+}
+
+/* Dietary Legend (optional - add to menu section) */
+.menu-legend {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    margin-bottom: 35px;
+    padding: 18px 25px;
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(29, 78, 79, 0.05);
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+.no-items {
+    color: var(--text-muted);
+    font-style: italic;
+    padding: 25px;
+    text-align: center;
+}
+
+/* ============================================
+   Gallery Section
+   ============================================ */
+.gallery-section {
+    padding: 120px 0;
+    background-color: var(--bg-light);
+}
+
+.gallery-item {
+    position: relative;
+    margin-bottom: 30px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(29, 78, 79, 0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.gallery-item-wide img {
+    height: 300px;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.08);
+}
+
+.gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 30px 25px;
+    background: linear-gradient(transparent, rgba(29, 78, 79, 0.9));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.gallery-overlay span {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--white);
+}
+
+/* ============================================
+   Hours & Reservation Section
+   ============================================ */
+.hours-reservation-section {
+    padding: 100px 0;
+    background: var(--bg-section);
+}
+
+.hours-card,
+.reservation-card {
+    background: var(--white);
+    border-radius: 20px;
+    padding: 40px;
+    height: 100%;
+    box-shadow: 0 10px 40px rgba(29, 78, 79, 0.06);
+}
+
+.hours-header,
+.reservation-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--caffe-cream);
+}
+
+.hours-header i,
+.reservation-header i {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--caffe-primary);
+    color: var(--white);
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+.hours-header h3,
+.reservation-header h3 {
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.hours-content .hours-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.hours-content .hours-item:last-child {
+    border-bottom: none;
+}
+
+.hours-content .hours-item.weekend {
+    background: var(--bg-section);
+    margin: 15px -20px -10px;
+    padding: 15px 20px;
+    border-radius: 0 0 12px 12px;
+}
+
+.hours-item .day {
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.hours-item .time {
+    font-weight: 600;
+    color: var(--caffe-secondary);
+}
+
+.hours-item .time.closed {
+    color: var(--text-muted);
+}
+
+.reservation-content p {
+    font-size: 16px;
+    color: var(--text-secondary);
+    margin-bottom: 25px;
+    line-height: 1.7;
+}
+
+.reservation-phone {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.reservation-phone a {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--caffe-primary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.reservation-phone a:hover {
+    color: var(--caffe-secondary);
+}
+
+.reservation-divider {
+    text-align: center;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.reservation-divider::before,
+.reservation-divider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background: var(--border-light);
+}
+
+.reservation-divider::before {
+    left: 0;
+}
+
+.reservation-divider::after {
+    right: 0;
+}
+
+.reservation-divider span {
+    background: var(--white);
+    padding: 0 15px;
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+.reservation-card .primary-button {
+    text-align: center;
+}
+
+.reservation-card .primary-button a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* ============================================
+   Contact Section
+   ============================================ */
+.contact-section {
+    padding: 100px 0;
+    background: linear-gradient(135deg, var(--caffe-primary) 0%, var(--caffe-dark) 100%);
+}
+
+.contact-card {
+    text-align: center;
+    padding: 40px 30px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-5px);
+}
+
+.contact-icon {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--caffe-secondary);
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    box-shadow: 0 10px 30px rgba(224, 122, 95, 0.3);
+}
+
+.contact-icon i {
+    font-size: 28px;
+    color: var(--white);
+}
+
+.contact-card h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--white);
+    margin: 0 0 10px;
+}
+
+.contact-card p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+    line-height: 1.6;
+}
+
+.contact-card a {
+    color: var(--caffe-accent);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-card a:hover {
+    color: var(--white);
+}
+
+/* ============================================
+   Map Section
+   ============================================ */
+.map-section {
+    margin: 0;
+}
+
+.map-section #map {
+    height: 400px;
+}
+
+.map-section iframe {
+    display: block;
+    filter: saturate(0.8);
+}
+
+/* ============================================
+   Cross-Promo Banner
+   ============================================ */
+.cross-promo-banner {
+    padding: 80px 0;
+    background: var(--caffe-cream);
+    text-align: center;
+}
+
+.promo-content {
+    padding: 50px;
+    background: var(--white);
+    border-radius: 20px;
+    box-shadow: 0 10px 50px rgba(29, 78, 79, 0.08);
+}
+
+.promo-label {
+    display: inline-block;
+    font-family: 'Nunito', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--caffe-secondary);
+    margin-bottom: 15px;
+}
+
+.promo-content h3 {
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0 0 15px;
+}
+
+.promo-content p {
+    font-size: 16px;
+    color: var(--text-muted);
+    margin-bottom: 30px;
+}
+
+/* ============================================
+   Footer
+   ============================================ */
+footer {
+    background-color: var(--caffe-dark);
+    padding: 30px 0;
+}
+
+footer p {
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+}
+
+footer .social-icons li a i {
+    background-color: var(--caffe-secondary);
+    transition: all 0.3s ease;
+}
+
+footer .social-icons li a i:hover {
+    background-color: var(--caffe-accent);
+}
+
+/* ============================================
+   Responsive Styles
+   ============================================ */
+@media (max-width: 991px) {
+    .hero-banner {
+        padding: 140px 0 120px;
+    }
+    
+    .hero-content h1 {
+        font-size: 48px;
+    }
+    
+    .about-section {
+        padding: 80px 0;
+    }
+    
+    .about-content {
+        padding-left: 0;
+        margin-top: 50px;
+    }
+    
+    .about-badge {
+        right: 20px;
+    }
+    
+    .menu-content-wrapper {
+        padding: 35px 25px;
+    }
+    
+    .section-heading-center h2 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-banner {
+        padding: 120px 0 100px;
+    }
+    
+    .hero-content h1 {
+        font-size: 36px;
+    }
+    
+    .hero-content p {
+        font-size: 16px;
+    }
+    
+    .hero-tagline {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .about-content h2 {
+        font-size: 30px;
+    }
+    
+    .about-features {
+        grid-template-columns: 1fr;
+    }
+    
+    .weekday-selector {
+        gap: 8px;
+    }
+    
+    .day-btn {
+        padding: 12px 20px;
+        font-size: 12px;
+    }
+    
+    .menu-section-header h3 {
+        font-size: 22px;
+    }
+    
+    .menu-item {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .menu-item-price {
+        margin-left: 0;
+        align-self: flex-start;
+    }
+    
+    .hours-card,
+    .reservation-card {
+        margin-bottom: 30px;
+    }
+    
+    .gallery-item img,
+    .gallery-item-wide img {
+        height: 200px;
+    }
+    
+    .feature-card {
+        margin-bottom: 30px;
+    }
+    
+    .contact-card {
+        margin-bottom: 20px;
+    }
+    
+    .daily-menu,
+    .gallery-section,
+    .about-section {
+        padding: 80px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .day-btn {
+        padding: 10px 16px;
+        font-size: 11px;
+        flex: 1;
+        min-width: calc(33.333% - 8px);
+    }
+    
+    .today-badge {
+        font-size: 8px;
+        padding: 2px 6px;
+    }
+    
+    .hero-content h1 {
+        font-size: 30px;
+    }
+    
+    .section-heading-center h2 {
+        font-size: 28px;
+    }
+    
+    .promo-content {
+        padding: 30px 20px;
+    }
+    
+    .promo-content h3 {
+        font-size: 28px;
+    }
+}
+
+/* ============================================
+   Accessibility
+   ============================================ */
+.day-btn:focus,
+.primary-button a:focus,
+.secondary-button a:focus {
+    outline: 2px solid var(--caffe-accent);
+    outline-offset: 3px;
+}
+
+/* Focus visible for keyboard navigation */
+.day-btn:focus:not(:focus-visible) {
+    outline: none;
+}
+
+.day-btn:focus-visible {
+    outline: 2px solid var(--caffe-accent);
+    outline-offset: 3px;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .gallery-item:hover img {
+        transform: none;
+    }
+}
+
+/* ============================================
+   Footer Admin Link (Subtle)
+   ============================================ */
+.footer-admin {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+.footer-admin a {
+    color: rgba(255, 255, 255, 0.25) !important;
+    font-size: 11px;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+.footer-admin a:hover {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* ============================================
+   Print Styles
+   ============================================ */
+@media print {
+    .header,
+    .hero-banner,
+    .features-section,
+    .gallery-section,
+    .hours-reservation-section,
+    .contact-section,
+    .map-section,
+    .cross-promo-banner,
+    footer {
+        display: none;
+    }
+    
+    .daily-menu {
+        padding: 20px 0;
+        background: white;
+    }
+    
+    .menu-content-wrapper {
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+}
+
