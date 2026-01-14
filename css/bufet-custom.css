@@ -639,6 +639,19 @@ footer a:hover {
 }
 
 @media (max-width: 768px) {
+    /* Mobile Navigation */
+    .header .nav.navbar-nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .navbar-nav li a.nav-cafe-link {
+        margin-left: 0;
+        margin-top: 10px;
+        display: inline-block;
+    }
+    
     .logo-img {
         max-height: 50px;
     }

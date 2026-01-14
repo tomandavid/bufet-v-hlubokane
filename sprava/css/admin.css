@@ -709,6 +709,7 @@ body {
         margin-left: 0;
         padding: 1rem;
         max-width: 100vw;
+        overflow-x: hidden;
     }
     
     .content-header {
@@ -736,6 +737,32 @@ body {
     .action-bar-right .btn {
         width: 100%;
         justify-content: center;
+    }
+    
+    /* Dish item responsive layout */
+    .dish-item {
+        flex-wrap: wrap;
+    }
+    
+    .dish-name-input {
+        flex: 1 1 100%;
+        min-width: 0;
+        order: 1;
+    }
+    
+    .dish-price-input {
+        width: 70px;
+        flex-shrink: 0;
+        order: 2;
+    }
+    
+    .dish-tag-checkbox {
+        order: 3;
+    }
+    
+    .remove-dish-btn {
+        order: 4;
+        flex-shrink: 0;
     }
 }
 
