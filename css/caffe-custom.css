@@ -145,6 +145,26 @@ h1, h2, h3, h4, h5 {
     color: var(--caffe-secondary) !important;
 }
 
+/* Bufet Navigation Link */
+.navbar-nav li a.nav-bufet-link {
+    background-color: var(--caffe-secondary);
+    color: var(--white) !important;
+    border-radius: 20px;
+    padding: 8px 18px !important;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav li a.nav-bufet-link:hover {
+    background-color: var(--caffe-primary);
+    color: var(--white) !important;
+    transform: translateY(-2px);
+}
+
+.navbar-nav li a.nav-bufet-link i {
+    margin-right: 5px;
+}
+
 /* ============================================
    Hero Banner Section
    ============================================ */
