@@ -175,10 +175,19 @@
             return false;
         }
         
-        // Show loading state
-        const submitBtn = form.querySelector('button[type="submit"]:focus, button[type="submit"]:hover') || 
-                         form.querySelector('button[name="action"][value="publish"]');
-        if (submitBtn) {
+        // Find which button was clicked using submitter
+        const submitBtn = e.submitter;
+        
+        if (submitBtn && submitBtn.name === 'action') {
+            // Add hidden field with action value BEFORE disabling the button
+            // (disabled buttons don't submit their name/value)
+            const hiddenAction = document.createElement('input');
+            hiddenAction.type = 'hidden';
+            hiddenAction.name = 'action';
+            hiddenAction.value = submitBtn.value;
+            form.appendChild(hiddenAction);
+            
+            // Now safe to disable and show loading state
             submitBtn.disabled = true;
             submitBtn.innerHTML = '⏳ Ukládám...';
         }
